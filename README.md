@@ -393,12 +393,6 @@
 
   Deploy the namespace and application workloads on the regional clusters `cluster2` and `cluster3`.
 
-  <p align="center">
-    <img src="images/shift-left-benefit.png" 
-        alt="Separation of Roles in Gateway API" 
-        width="800">
-  </p>
-
   ```bash
   # Apply the application deployment on cluster2 and cluster3
   kubectl apply -f manifests/app/store-deployment.yaml --context=cluster2
