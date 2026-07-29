@@ -13,11 +13,7 @@
 
   The multi-cluster gateway architecture leverages a hub-and-spoke model where a central **config cluster** (`cluster1`) controls routing policies while application workloads are deployed across **workload clusters** (`cluster2` in `us-east1` and `cluster3` in `us-central1`). All clusters are grouped logically within a **GKE Fleet** to enable secure cross-cluster service discovery and unified load balancing.
 
-  <p align="center">
-    <img src="images/microservice-multi-region-multicluster-architecture.png" 
-        alt="Microservices Multi-Region Architecture" 
-        width="800">
-  </p>
+  
 
   ## Business Problem
   Enterprises deploying containerized workloads at scale face significant operational and architectural challenges when routing client traffic across multiple regions and Kubernetes clusters:
