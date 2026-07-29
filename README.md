@@ -40,12 +40,12 @@
   </p>
 
   ## Reference Architecture
-
-  <p align="center">
-    <img src="images/config-sync-architecture.png" 
-        alt="Config Sync and Cluster Topology" 
+<p align="center">
+    <img src="images/fleet-shared-scopes-teams.png" 
+        alt="Fleet Shared Scopes and Teams" 
         width="800">
   </p>
+
 
   The GKE Multi-Cluster Ingress and Gateway architecture is composed of the following key components:
   1. **GKE Fleet:** A logical grouping of GKE clusters under a single project that enables workload identity federation and shared service scopes.
@@ -54,12 +54,7 @@
   4. **ServiceExport & ServiceImport:** The MCS API primitives. A `ServiceExport` in a workload cluster exports a service name to the Fleet. The MCS importer controller in turn generates a corresponding `ServiceImport` resource, making the service addressable across the fleet.
   5. **Gateway Controller:** A Google-hosted controller that listens to the config cluster, provisions Google Cloud Load Balancing resources, registers Network Endpoint Groups (NEGs) from the workload clusters, and configures health checks.
 
-  <p align="center">
-    <img src="images/fleet-shared-scopes-teams.png" 
-        alt="Fleet Shared Scopes and Teams" 
-        width="800">
-  </p>
-
+  
   ## Design Decisions & Trade-offs
 
   The architectural choices for this project are justified below:
