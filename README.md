@@ -1,4 +1,7 @@
-  # Deploying a Multi-Cluster Gateway Across GKE Clusters
+<h1 align="center">
+  <img  height="70" alt="csm" src="https://github.com/user-attachments/assets/d073135d-381e-4dd2-a8d6-040b28d972e3" /><img  height="70" alt="loadbalancer" src="https://github.com/user-attachments/assets/6d9af894-fc89-4d0d-962d-89266dc87a3a" /> Deploying a Multi-Cluster Gateway Across GKE Clusters
+</h1>
+
 
   ## Executive Summary
   This project demonstrates how to deploy and configure the Google Kubernetes Engine (GKE) Multi-Cluster Gateway controller to manage application networking across multiple clusters and regions. By leveraging GKE Fleets, Multi-Cluster Services (MCS), and Multi-Cluster Gateways (MCG), we provision a global HTTP(S) Load Balancer that routes and load balances traffic across two GKE clusters in distinct regions (`us-east1` and `us-central1`), managed by a centralized configuration cluster.
